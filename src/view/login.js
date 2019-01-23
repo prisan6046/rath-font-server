@@ -1,43 +1,42 @@
-import React , { Component } from 'react';
+import React, { Component } from 'react';
 
-class Home extends Component{
+class Home extends Component {
 
-    render(){
-        return(
+    render() {
+        return (
             <div className="home-bg">
-                <div class="container">
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-4">
-                                <div class="login-panel panel panel-default">
-                                    
-                                    <div class="panel-body">
-                                            <fieldset>
-                                                <div class="form-group">
-                                                    <center><img src="company_logo.png" /></center>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus />
-                                                </div>
-                                                <div class="form-group">
-                                                    <input class="form-control" placeholder="Password" name="password" type="password" value="" />
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label>
-                                                        <input name="remember" type="checkbox" value="Remember Me" />Remember Me
-                                                    </label>
-                                                </div>
-                                            
-                                                <a href="/home" class="btn btn-lg btn-success btn-block">Login</a>
-                                            </fieldset>
-                                    </div>
+                <br />
+                <br />
+                <br />
+
+                <div className="login-box">
+                   
+                    <div className="login-box-body">
+                        <br />
+                            <center><img class="company_logo" src="company_logo.png" alt="images" /></center>
+                            <br />
+                            <br />
+                            <div className="form-group has-feedback">
+                                <input type="email" className="form-control" placeholder="Email" />
+                                <span className="glyphicon glyphicon-envelope form-control-feedback"></span>
+                            </div>
+                            <div className="form-group has-feedback">
+                                <input type="password" className="form-control" placeholder="Password" />
+                                <span className="glyphicon glyphicon-lock form-control-feedback"></span>
+                            </div>
+                            <div className="row">
+                                <div className="col-xs-4"></div>
+                                <div className="col-xs-4">
+                                   <center><a href="/home"><button type="submit" className="btn btn-primary btn-block btn-flat ">Sign In</button></a></center> 
                                 </div>
+                                <div className="col-xs-4"></div>
                             </div>
                         </div>
                     </div>
-            </div>
-        )
-    }
-
-}
-
+                </div>
+                )
+            }
+        
+        }
+        
 export default Home

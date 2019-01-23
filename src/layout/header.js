@@ -1,91 +1,100 @@
-import React , { Component }from 'react'
+import React, { Component } from 'react'
 
-class Header extends Component{
+class Header extends Component {
 
-    render(){
-        return(
+    render() {
+        return (
             <div>
-                <nav className="navbar navbar-default navbar-static-top" role="navigation">
-                    <div className="navbar-header">
-                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <header className="main-header">
+                    <a href="/" className="logo">
+                        <span className="logo-mini"><b>Sys</b>tem</span>
+                        <span className="logo-lg"><b>System</b> Car</span>
+                    </a>
+                    <nav className="navbar navbar-static-top">
+                        <a href="/" className="sidebar-toggle" data-toggle="push-menu" role="button">
                             <span className="sr-only">Toggle navigation</span>
-                            <span className="icon-bar"></span>
-                            <span className="icon-bar"></span>
-                            <span className="icon-bar"></span>
-                        </button>
-                        <a className="navbar-brand" href="/">ข้อมูลการตรวจสอบยานพาหนะ</a>
-                    </div>
+                        </a>
+                        <div className="navbar-custom-menu">
+                            <ul className="nav navbar-nav">
 
-                    <ul className="nav navbar-top-links navbar-right">
-                        <li className="dropdown">
-                            <a className="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <i className="fa fa-user fa-fw"></i> <i className="fa fa-caret-down"></i>
-                            </a>
-                            <ul className="dropdown-menu dropdown-user">
-                                <li><a href="#"><i className="fa fa-user fa-fw"></i> User Profile</a>
-                                </li>
-                                <li><a href="#"><i className="fa fa-gear fa-fw"></i> Settings</a>
-                                </li>
-                                <li className="divider"></li>
-                                <li><a href="/"><i className="fa fa-sign-out fa-fw"></i> Logout</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                                <li className="dropdown user user-menu">
+                                    <a href="/" className="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="dist/img/user2-160x160.jpg" className="user-image" alt="name6" />
+                                        <span className="hidden-xs">Alexander Pierce</span>
+                                    </a>
+                                    <ul className="dropdown-menu">
+                                        <li className="user-header">
+                                            <img src="dist/img/user2-160x160.jpg" className="img-circle" alt="name7" />
 
-                    <div className="navbar-default sidebar" role="navigation">
-                        <div className="sidebar-nav navbar-collapse">
-                            <ul className="nav" id="side-menu">
-                                <li className="sidebar-search">
-                                    <div className="input-group custom-search-form">
-                                        <input type="text" className="form-control" placeholder="Search..." />
-                                        <span className="input-group-btn">
-                                        <button className="btn btn-default" type="button">
-                                            <i className="fa fa-search" />
-                                        </button>
-                                    </span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="index.html"><i className="fa fa-dashboard fa-fw"></i> แผงควบคุม</a>
-                                </li>
-                                <li>
-                                    <a className="#"><i class="fa fa-table fa-fw"></i> ลงข้อมูลแบบ คพ<span class="fa arrow"></span></a>
-                                    <ul class="nav nav-second-level">
-                                        <li>
-                                            <a href="/">ห้ามใช้ชั่วคราว</a>
+                                            <p>
+                                                Alexander Pierce - Web Developer
+                                            </p>
                                         </li>
-                                        <li>
-                                            <a href="/">ใกล้ครบกำหนดคำสั่งห้ามใช้ชั่วคราว</a>
+                                        <li className="user-body">
+                                            <div className="row">
+                                                <div className="col-xs-4 text-center">
+                                                    <a href="/">Followers</a>
+                                                </div>
+                                                <div className="col-xs-4 text-center">
+                                                    <a href="/">Sales</a>
+                                                </div>
+                                                <div className="col-xs-4 text-center">
+                                                    <a href="/">Friends</a>
+                                                </div>
+                                            </div>
                                         </li>
-                                        <li>
-                                            <a href="/">ยกเลิกคำสั่งห้ามใช้ชั่วคราว</a>
+                                        <li className="user-footer">
+                                            <div className="pull-left">
+                                                <a href="/" className="btn btn-default btn-flat">ตั้งค่าข้อมูล</a>
+                                            </div>
+                                            <div className="pull-right">
+                                                <a href="/" className="btn btn-default btn-flat">ออกจากระบบ</a>
+                                            </div>
                                         </li>
-                                        <li>
-                                            <a href="/">เกินกำหนดเวลา 30 วัน</a>
-                                        </li>
-                                        <li>
-                                            <a href="/">ห้ามใช้เด็ดขาด</a>
-                                        </li>
-                                        <li>
-                                            <a href="/">อยู่ระหว่างการปรับปรุง</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="/">ยกเลิกคำสั่งห้ามใช้เด็ดขาด</a>
-                                        </li>
-
-
                                     </ul>
                                 </li>
-                                <li>
-                                    <a href="tables.html"><i className="fa fa-bar-chart-o fa-fw"></i> สถิติ</a>
-                                </li>
-                                
+
                             </ul>
                         </div>
-                    </div>
-                </nav>
+                    </nav>
+                </header>
+                <aside className="main-sidebar">
+                    <section className="sidebar">
+                        <div className="user-panel">
+                            <div className="pull-left image">
+                                <img src="dist/img/user2-160x160.jpg" className="img-circle" alt="name1" />
+                            </div>
+                            <div className="pull-left info">
+                                <p>Alexander Pierce</p>
+                                <a href="/"><i className="fa fa-circle text-success"></i> Online</a>
+                            </div>
+                        </div>
+                        <ul className="sidebar-menu" data-widget="tree">
+                            <li className="header">MAIN NAVIGATION</li>
+                            <li className="treeview"><a href="/"><i className="fa fa-book"></i> <span>หน้าหลัก</span></a></li>
+                            <li className="treeview">
+                                <a href="/">
+                                    <i className="fa fa-dashboard"></i> <span>ลงข้อมูลแบบ คพ.</span>
+                                    <span className="pull-right-container">
+                                        <i className="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                <ul className="treeview-menu">
+                                    <li className="active"><a href="/sheet1"><i className="fa fa-circle-o"></i>ห้ามใช้ชั่วคราว</a></li>
+                                    <li><a href="/sheet2"><i className="fa fa-circle-o"></i>ห้ามใช้ชั่วคราวแต่ใกล้ครบกำหนดเวลา</a></li>
+                                    <li><a href="/sheet3"><i className="fa fa-circle-o"></i>ยกเลิกคำสั่งห้ามใช้ชั่วคราว</a></li>
+                                    <li><a href="/sheet4"><i className="fa fa-circle-o"></i>ห้ามใช้ชั่วคราวและเกินกำหนดเวลา 30 วัน</a></li>
+                                    <li><a href="/sheet5"><i className="fa fa-circle-o"></i>ห้ามใช้เด็ดขาด</a></li>
+                                    <li><a href="/sheet6"><i className="fa fa-circle-o"></i>ห้ามใช้ชั่วคราวและกำลังปรับปรุง</a></li>
+                                    <li><a href="/sheet7"><i className="fa fa-circle-o"></i>ยกเลิกคำสั่งห้ามใช้เด็ดขาด</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/chart"><i className="fa fa-book"></i> <span>สถิติ</span></a></li>
+                        </ul>
+                    </section>
+                </aside>
+
+
             </div>
         )
     }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from '../layout/header'
+import Footer from '../layout/footer'
 
 
 class Home extends Component {
@@ -8,317 +9,155 @@ class Home extends Component {
         return (
             <div>
                 <Header />
+                <div className="content-wrapper">
+                    <section className="content-header">
+                        <h1>
+                            Dashboard
+                        <small>Control panel</small>
+                        </h1>
+                        <ol className="breadcrumb">
+                            <li><a href="/"><i className="fa fa-dashboard"></i> Home</a></li>
+                            <li className="active">Dashboard</li>
+                        </ol>
+                    </section>
+                    <section className="content">
+                        <div className="row">
+                            <div className="col-lg-3 col-xs-6">
+                                <div className="small-box bg-aqua">
+                                    <div className="inner">
+                                        <h3>150</h3>
 
-                <div id="page-wrapper">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h1 class="page-header">Dashboard</h1>
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    <div class="row">
-                                        <div class="col-xs-3">
-                                            <i class="fa fa-comments fa-5x"></i>
-                                        </div>
-                                        <div class="col-xs-9 text-right">
-                                            <div class="huge">26</div>
-                                            <div>New Comments!</div>
-                                        </div>
+                                        <p>New Orders</p>
                                     </div>
+                                    <div className="icon">
+                                        <i className="ion ion-bag"></i>
+                                    </div>
+                                    <a href="/" className="small-box-footer">More info <i className="fa fa-arrow-circle-right"></i></a>
                                 </div>
-                                <a href="#">
-                                    <div class="panel-footer">
-                                        <span class="pull-left">View Details</span>
-                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                        <div class="clearfix"></div>
+                            </div>
+                            <div className="col-lg-3 col-xs-6">
+                                <div className="small-box bg-green">
+                                    <div className="inner">
+                                        <h3>53<sup >%</sup></h3>
+
+                                        <p>Bounce Rate</p>
                                     </div>
-                                </a>
+                                    <div className="icon">
+                                        <i className="ion ion-stats-bars"></i>
+                                    </div>
+                                    <a href="/" className="small-box-footer">More info <i className="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-xs-6">
+                                <div className="small-box bg-yellow">
+                                    <div className="inner">
+                                        <h3>44</h3>
+
+                                        <p>User Registrations</p>
+                                    </div>
+                                    <div className="icon">
+                                        <i className="ion ion-person-add"></i>
+                                    </div>
+                                    <a href="/" className="small-box-footer">More info <i className="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-xs-6">
+                                <div className="small-box bg-red">
+                                    <div className="inner">
+                                        <h3>65</h3>
+
+                                        <p>Unique Visitors</p>
+                                    </div>
+                                    <div className="icon">
+                                        <i className="ion ion-pie-graph"></i>
+                                    </div>
+                                    <a href="/" className="small-box-footer">More info <i className="fa fa-arrow-circle-right"></i></a>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="panel panel-green">
-                                <div class="panel-heading">
-                                    <div class="row">
-                                        <div class="col-xs-3">
-                                            <i class="fa fa-tasks fa-5x"></i>
-                                        </div>
-                                        <div class="col-xs-9 text-right">
-                                            <div class="huge">12</div>
-                                            <div>New Tasks!</div>
-                                        </div>
+                        <div className="row">
+                            <section className="col-lg-7 connectedSortable">
+                                <div className="nav-tabs-custom">
+                                    <ul className="nav nav-tabs pull-right">
+                                        <li className="active"><a href="#revenue-chart" data-toggle="tab">Area</a></li>
+                                        <li><a href="#sales-chart" data-toggle="tab">Donut</a></li>
+                                        <li className="pull-left header"><i className="fa fa-inbox"></i> Sales</li>
+                                    </ul>
+                                    <div className="tab-content no-padding">
+                                        <div className="chart tab-pane active" id="revenue-chart" ></div>
+                                        <div className="chart tab-pane" id="sales-chart" ></div>
                                     </div>
                                 </div>
-                                <a href="#">
-                                    <div class="panel-footer">
-                                        <span class="pull-left">View Details</span>
-                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="panel panel-yellow">
-                                <div class="panel-heading">
-                                    <div class="row">
-                                        <div class="col-xs-3">
-                                            <i class="fa fa-shopping-cart fa-5x"></i>
-                                        </div>
-                                        <div class="col-xs-9 text-right">
-                                            <div class="huge">124</div>
-                                            <div>New Orders!</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="#">
-                                    <div class="panel-footer">
-                                        <span class="pull-left">View Details</span>
-                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="panel panel-red">
-                                <div class="panel-heading">
-                                    <div class="row">
-                                        <div class="col-xs-3">
-                                            <i class="fa fa-support fa-5x"></i>
-                                        </div>
-                                        <div class="col-xs-9 text-right">
-                                            <div class="huge">13</div>
-                                            <div>Support Tickets!</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="#">
-                                    <div class="panel-footer">
-                                        <span class="pull-left">View Details</span>
-                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                            </section>
 
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <i class="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
-                                        <div class="pull-right">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                                Actions
-                                                    <span class="caret"></span>
-                                            </button>
-                                            <ul class="dropdown-menu pull-right" role="menu">
-                                                <li><a href="#">Action</a>
-                                                </li>
-                                                <li><a href="#">Another action</a>
-                                                </li>
-                                                <li><a href="#">Something else here</a>
-                                                </li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Separated link</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel-body">
-                                    <div id="morris-area-chart"></div>
-                                </div>
-
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
-                                        <div class="pull-right">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                                Actions
-                                                    <span class="caret"></span>
-                                            </button>
-                                            <ul class="dropdown-menu pull-right" role="menu">
-                                                <li><a href="#">Action</a>
-                                                </li>
-                                                <li><a href="#">Another action</a>
-                                                </li>
-                                                <li><a href="#">Something else here</a>
-                                                </li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Separated link</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel-body">
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <div class="table-responsive">
-                                                <table class="table table-bordered table-hover table-striped">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Date</th>
-                                                            <th>Time</th>
-                                                            <th>Amount</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>3326</td>
-                                                            <td>10/21/2013</td>
-                                                            <td>3:29 PM</td>
-                                                            <td>$321.33</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3325</td>
-                                                            <td>10/21/2013</td>
-                                                            <td>3:20 PM</td>
-                                                            <td>$234.34</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3324</td>
-                                                            <td>10/21/2013</td>
-                                                            <td>3:03 PM</td>
-                                                            <td>$724.17</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3323</td>
-                                                            <td>10/21/2013</td>
-                                                            <td>3:00 PM</td>
-                                                            <td>$23.71</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3322</td>
-                                                            <td>10/21/2013</td>
-                                                            <td>2:49 PM</td>
-                                                            <td>$8345.23</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3321</td>
-                                                            <td>10/21/2013</td>
-                                                            <td>2:23 PM</td>
-                                                            <td>$245.12</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3320</td>
-                                                            <td>10/21/2013</td>
-                                                            <td>2:15 PM</td>
-                                                            <td>$5663.54</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3319</td>
-                                                            <td>10/21/2013</td>
-                                                            <td>2:13 PM</td>
-                                                            <td>$943.45</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                            <section className="col-lg-5 connectedSortable">
+                                <div className="box box-solid bg-green-gradient">
+                                    <div className="box-header">
+                                        <i className="fa fa-calendar"></i>
+                                        <h3 className="box-title">Calendar</h3>
+                                        <div className="pull-right box-tools">
+                                            <div className="btn-group">
+                                                <button type="button" className="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown">
+                                                    <i className="fa fa-bars"></i></button>
+                                                <ul className="dropdown-menu pull-right" role="menu">
+                                                    <li><a href="/">Add new event</a></li>
+                                                    <li><a href="/">Clear events</a></li>
+                                                    <li className="divider"></li>
+                                                    <li><a href="/">View calendar</a></li>
+                                                </ul>
                                             </div>
-
+                                            <button type="button" className="btn btn-success btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
+                                            </button>
+                                            <button type="button" className="btn btn-success btn-sm" data-widget="remove"><i class="fa fa-times"></i>
+                                            </button>
                                         </div>
+                                    </div>
+                                    <div className="box-body no-padding">
+                                        <div id="calendar" ></div>
+                                    </div>
+                                    <div className="box-footer text-black">
+                                        <div className="row">
+                                            <div className="col-sm-6">
+                                                <div className="clearfix">
+                                                    <span className="pull-left">Task #1</span>
+                                                    <small className="pull-right">90%</small>
+                                                </div>
+                                                <div className="progress xs">
+                                                    <div className="progress-bar progress-bar-green" ></div>
+                                                </div>
 
-                                        <div class="col-lg-8">
-                                            <div id="morris-bar-chart"></div>
+                                                <div className="clearfix">
+                                                    <span className="pull-left">Task #2</span>
+                                                    <small className="pull-right">70%</small>
+                                                </div>
+                                                <div className="progress xs">
+                                                    <div className="progress-bar progress-bar-green" ></div>
+                                                </div>
+                                            </div>
+                                            <div className="col-sm-6">
+                                                <div className="clearfix">
+                                                    <span className="pull-left">Task #3</span>
+                                                    <small className="pull-right">60%</small>
+                                                </div>
+                                                <div className="progress xs">
+                                                    <div className="progress-bar progress-bar-green" ></div>
+                                                </div>
+                                                <div className="clearfix">
+                                                    <span className="pull-left">Task #4</span>
+                                                    <small className="pull-right">40%</small>
+                                                </div>
+                                                <div className="progress xs">
+                                                    <div className="progress-bar progress-bar-green"></div>
+                                                </div>
+                                            </div>
                                         </div>
-
                                     </div>
-
                                 </div>
-
-                            </div>
+                            </section>
                         </div>
-
-                        <div class="col-lg-4">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <i class="fa fa-bell fa-fw"></i> Notifications Panel
-                                    </div>
-
-                                <div class="panel-body">
-                                    <div class="list-group">
-                                        <a href="#" class="list-group-item">
-                                            <i class="fa fa-comment fa-fw"></i> New Comment
-                                                <span class="pull-right text-muted small"><em>4 minutes ago</em>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                                <span class="pull-right text-muted small"><em>12 minutes ago</em>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <i class="fa fa-envelope fa-fw"></i> Message Sent
-                                                <span class="pull-right text-muted small"><em>27 minutes ago</em>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <i class="fa fa-tasks fa-fw"></i> New Task
-                                                <span class="pull-right text-muted small"><em>43 minutes ago</em>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                                <span class="pull-right text-muted small"><em>11:32 AM</em>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <i class="fa fa-bolt fa-fw"></i> Server Crashed!
-                                                <span class="pull-right text-muted small"><em>11:13 AM</em>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <i class="fa fa-warning fa-fw"></i> Server Not Responding
-                                                <span class="pull-right text-muted small"><em>10:57 AM</em>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <i class="fa fa-shopping-cart fa-fw"></i> New Order Placed
-                                                <span class="pull-right text-muted small"><em>9:49 AM</em>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <i class="fa fa-money fa-fw"></i> Payment Received
-                                                <span class="pull-right text-muted small"><em>Yesterday</em>
-                                            </span>
-                                        </a>
-                                    </div>
-
-                                    <a href="#" class="btn btn-default btn-block">View All Alerts</a>
-                                </div>
-
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <i class="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
-                                    </div>
-                                <div class="panel-body">
-                                    <div id="morris-donut-chart"></div>
-                                    <a href="#" class="btn btn-default btn-block">View Details</a>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
+                    </section>
                 </div>
+                <Footer />
             </div>
         )
     }
