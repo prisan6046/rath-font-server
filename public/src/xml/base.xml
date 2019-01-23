@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-extend="ListView.buttons">
+    <t t-jquery=".o_list_button_add" t-operation="replace">
+        <button type="button" class="btn btn-primary btn-sm o_list_button_add" accesskey="c">
+            <t t-if="widget.model === 'fleet.vehicle'">
+                ลงข้อมูลแบบ คพ.
+            </t>
+
+            <t t-if="widget.model !== 'fleet.vehicle'">
+                <t t-esc="widget.options.addable"/>
+            </t>
+
+        </button>
+    </t>
+    </t>
+    
+</templates>
