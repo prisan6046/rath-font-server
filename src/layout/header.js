@@ -71,7 +71,7 @@ class Header extends Component {
                         </div>
                         <ul className="sidebar-menu" data-widget="tree">
                             <li className="header">MAIN NAVIGATION</li>
-                            <li className="treeview"><a href="/"><i className="fa fa-book"></i> <span>หน้าหลัก</span></a></li>
+                            <li><a href="/home"><i className="fa fa-book"></i> <span>หน้าหลัก</span></a></li>
                             <li className="treeview">
                                 <a href="/">
                                     <i className="fa fa-dashboard"></i> <span>ลงข้อมูลแบบ คพ.</span>

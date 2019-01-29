@@ -9,7 +9,7 @@ class Home extends Component {
         return (
             <div>
                 <Header />
-                <div className="content-wrapper">
+                {/* <div className="content-wrapper">
                     <section className="content-header">
                         <h1>
                             Dashboard
@@ -156,7 +156,64 @@ class Home extends Component {
                             </section>
                         </div>
                     </section>
+                </div> */}
+                <div className="content-wrapper">
+                    <section className="content-header">
+                        <h1>
+                            ยานพาหนะ
+                        </h1>
+                    </section>
+                    <section className="content">
+                        <div className="row">
+                            <div className="col-xs-12">
+                                <div className="box">
+                                    <div className="box-header">
+                                        <h3 className="box-title">รายการ</h3>
+                                    </div>
+                                    <div className="box-body table-responsive no-padding">
+                                    <div class="box-body">
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option>กรุณาเลือก</option>
+                                                    <option>ห้ามใช้ชั่วคราว</option>
+                                                    <option>ห้ามใช้ชั่วคราวแต่ใกล้ครบกำหนดเวลา</option>
+                                                    <option>ยกเลิกคำสั่งห้ามใช้ชั่วคราว</option>
+                                                    <option>ห้ามใช้ชั่วคราวและเกินกำหนดเวลา 30 วัน</option>
+                                                    <option>ห้ามใช้เด็ดขาด</option>
+                                                    <option>ห้ามใช้ชั่วคราวและกำลังปรับปรุง</option>
+                                                    <option>ยกเลิกคำสั่งห้ามใช้เด็ดขาด</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    <table className="table">
+                                            <thead>
+                                            <tr>
+                                                <th>ทะเบียนรถ</th>
+                                                <th>ทะเบียนจังหวัด</th>
+                                                <th>ยี่ห้อยานพาหนะ</th>
+                                                <th>วันที่ห้ามใช้ยานพาหนะ</th>
+                                                <th>วันที่ออกใบอนุญาติ</th>
+                                                <th>วันที่ขอให้ตรวจสอบ</th>
+                                                <th>วัน/เวลาที่คำสั่งมีผล</th>
+                                                <th>สถานะการตรวจ</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>ห้ามใช้ชั่วคราว</td>
+                                                <td>23</td>
+                                            </tr>
+                                            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                 </div>
+
                 <Footer />
             </div>
         )

@@ -5,7 +5,7 @@ import Footer from '../layout/footer'
 
 class Chart extends Component {
 
-    componentDidMount(){
+    componentDidMount() {
         
     }
 
@@ -15,89 +15,89 @@ class Chart extends Component {
                 <Header />
                 <div className="content-wrapper">
                     <section className="content-header">
-                    <h1>
-                        ChartJS
-                        <small>Preview sample</small>
-                    </h1>
-                    <ol className="breadcrumb">
-                        <li><a href="/"><i className="fa fa-dashboard"></i> Home</a></li>
-                        <li><a href="/">Charts</a></li>
-                        <li className="active">ChartJS</li>
-                    </ol>
+                        <h1>
+                            Simple Tables
+                        <small>preview of simple tables</small>
+                        </h1>
+                        <ol className="breadcrumb">
+                            <li><a href="/"><i className="fa fa-dashboard"></i> Home</a></li>
+                            <li><a href="/">Tables</a></li>
+                            <li className="active">Simple</li>
+                        </ol>
                     </section>
+
                     <section className="content">
-                    <div className="row">
-                        <div className="col-md-6">
-                        <div className="box box-primary">
-                            <div className="box-header with-border">
-                            <h3 className="box-title">Area Chart</h3>
+                        <div className="row">
+                            <div className="col-xs-12">
+                                <div className="box">
+                                    <div className="box-header">
+                                        <h3 className="box-title">สถิติ</h3>
+                                    </div>
+                                    <div className="box-body table-responsive no-padding">
+                                    <table className="table">
+                                            <thead>
+                                            <tr>
+                                                <th>เดือน</th>
+                                                <th>จำนวน</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>มกราคม</td>
+                                                <td>23</td>
+                                            </tr>
+                                            <tr>
+                                                <td>กุมภาพันธ์</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>มีนาคม</td>
+                                                <td>6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>เมษายน </td>
+                                                <td>33</td>
+                                            </tr>
+                                            <tr>
+                                                <td>พฤษภาคม </td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>มิถุนายน</td>
+                                                <td>66</td>
+                                            </tr>
+                                            <tr>
+                                                <td>กรกฎาคม</td>
+                                                <td>12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>สิงหาคม</td>
+                                                <td>99</td>
+                                            </tr>
+                                            <tr>
+                                                <td>กันยายน </td>
+                                                <td>32</td>
+                                            </tr><tr>
+                                                <td>ตุลาคม</td>
+                                                <td>65</td>
+                                            </tr><tr>
+                                                <td>พฤศจิกายน</td>
+                                                <td>22</td>
+                                            </tr><tr>
+                                                <td>ธันวาคม </td>
+                                                <td>99</td>
+                                            </tr>
 
-                            <div className="box-tools pull-right">
-                                <button type="button" className="btn btn-box-tool" data-widget="collapse"><i className="fa fa-minus"></i>
-                                </button>
-                                <button type="button" className="btn btn-box-tool" data-widget="remove"><i className="fa fa-times"></i></button>
-                            </div>
-                            </div>
-                            <div className="box-body">
-                            <div className="chart">
-                                <canvas id="areaChart" ></canvas>
-                            </div>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div className="box box-danger">
-                            <div className="box-header with-border">
-                            <h3 className="box-title">Donut Chart</h3>
-
-                            <div className="box-tools pull-right">
-                                <button type="button" className="btn btn-box-tool" data-widget="collapse"><i className="fa fa-minus"></i>
-                                </button>
-                                <button type="button" className="btn btn-box-tool" data-widget="remove"><i className="fa fa-times"></i></button>
-                            </div>
-                            </div>
-                            <div className="box-body">
-                            <canvas id="pieChart" ></canvas>
-                            </div>
-                        </div>
-
-                        </div>
-                        <div className="col-md-6">
-                        <div className="box box-info">
-                            <div className="box-header with-border">
-                            <h3 className="box-title">Line Chart</h3>
-
-                            <div className="box-tools pull-right">
-                                <button type="button" className="btn btn-box-tool" data-widget="collapse"><i className="fa fa-minus"></i>
-                                </button>
-                                <button type="button" className="btn btn-box-tool" data-widget="remove"><i className="fa fa-times"></i></button>
-                            </div>
-                            </div>
-                            <div className="box-body">
-                            <div className="chart">
-                                <canvas id="lineChart" ></canvas>
-                            </div>
-                            </div>
-                        </div>
-                        <div className="box box-success">
-                            <div className="box-header with-border">
-                            <h3 className="box-title">Bar Chart</h3>
-
-                            <div className="box-tools pull-right">
-                                <button type="button" className="btn btn-box-tool" data-widget="collapse"><i className="fa fa-minus"></i>
-                                </button>
-                                <button type="button" className="btn btn-box-tool" data-widget="remove"><i className="fa fa-times"></i></button>
-                            </div>
-                            </div>
-                            <div className="box-body">
-                            <div className="chart">
-                                <canvas id="barChart" ></canvas>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
                     </section>
+
                 </div>
-                
+
                 <Footer />
             </div>
         )
