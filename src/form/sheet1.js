@@ -11,7 +11,7 @@ class SheetOne extends Component {
                 <div className="content-wrapper">
                     <section className="content-header">
                         <h1>
-                        Sheet 1
+                            Sheet 1
                         <small>Preview</small>
                         </h1>
                         <ol className="breadcrumb">
@@ -20,190 +20,212 @@ class SheetOne extends Component {
                             <li className="active">General Elements</li>
                         </ol>
                     </section>
-                    <section className="content">
-                        <div className="row">
-                            <div className="col-md-6">
-                                <div className="box box-primary">
-                                    <div className="box-header with-border">
-                                        <h3 className="box-title">Quick Example</h3>
-                                    </div>
-                                    <form >
-                                        <div className="box-body">
-                                            <div className="form-group">
-                                                <label htmlFor="exampleInputEmail1">Email address</label>
-                                                <input type="email" className="form-control" id="exampleInputEmail1" placeholder="Enter email" />
-                                            </div>
-                                            <div className="form-group">
-                                                <label htmlFor="exampleInputPassword1">Password</label>
-                                                <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
-                                            </div>
-                                            <div className="form-group">
-                                                <label htmlFor="exampleInputFile">File input</label>
-                                                <input type="file" id="exampleInputFile" />
 
-                                                <p className="help-block">Example block-level help text here.</p>
+                    <section class="content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="box box-info">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">รายละเอียดคำสั่ง (คพ.๓)</h3>
+                                    </div>
+
+                                    <form class="form-horizontal">
+                                        <div class="box-body">
+                                            <div class="form-group">
+                                                <label for="inputEmail3" class="col-sm-2 control-label">เล่มที่</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" />
+                                                </div>
                                             </div>
-                                            <div className="checkbox">
-                                                <label>
-                                                    <input type="checkbox" /> Check me out
-                                                </label>
+                                            <div class="form-group">
+                                                <label for="inputPassword3" class="col-sm-2 control-label">เลขที่</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" />
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="box-footer">
-                                            <button type="submit" className="btn btn-primary">Submit</button>
+                                            <div class="form-group">
+                                                <label for="inputPassword3" class="col-sm-2 control-label">วันที่ตรวจสอบ</label>
+                                                <div class="col-sm-10">
+                                                    <input type="date" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="inputPassword3" class="col-sm-2 control-label">สถานที่ตรวจสอบ</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="inputPassword3" class="col-sm-2 control-label">เจ้าหน้าที่ผู้ตรวจสอบ</label>
+                                                <div class="col-sm-10">
+                                                    <select class="form-control select2">
+                                                        <option>กรุณาเลือก</option>
+                                                        <option>นาย</option>
+                                                        <option>นาง</option>
+                                                        <option>นางสาว</option>
+                                                        <option>ยศ</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword3" class="col-sm-2 control-label">ตำแหน่ง</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword3" class="col-sm-2 control-label">สังกัด</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" />
+                                                </div>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
+
                             </div>
+                            <div class="col-md-6">
 
-                            <div className="col-md-6">
-                            
-                                <div className="box box-warning">
-                                    <div className="box-header with-border">
-                                        <h3 className="box-title">General Elements</h3>
-                                    </div>
+                                <div class="box box-info">
+                                        <div class="box-header with-border">
+                                            <h3 class="box-title">ผลการตรวจสอบ</h3>
+                                        </div>
 
-                                    <div className="box-body">
-                                        <form >
-
-                                            <div className="form-group">
-                                                <label>Text</label>
-                                                <input type="text" className="form-control" placeholder="Enter ..." />
-                                            </div>
-                                            <div className="form-group">
-                                                <label>Text Disabled</label>
-                                                <input type="text" className="form-control" placeholder="Enter ..."  />
-                                            </div>
-
-
-                                            <div className="form-group">
-                                                <label>Textarea</label>
-                                                <textarea className="form-control" rows="3" placeholder="Enter ..."></textarea>
-                                            </div>
-                                            <div className="form-group">
-                                                <label>Textarea Disabled</label>
-                                                <textarea className="form-control" rows="3" placeholder="Enter ..." ></textarea>
-                                            </div>
-
-
-                                            <div className="form-group has-success">
-                                                <label className="control-label" htmlFor="inputSuccess"><i className="fa fa-check"></i> Input with success</label>
-                                                <input type="text" className="form-control" id="inputSuccess" placeholder="Enter ..." />
-                                                <span className="help-block">Help block with success</span>
-                                            </div>
-                                            <div className="form-group has-warning">
-                                                <label className="control-label" htmlFor="inputWarning"><i className="fa fa-bell-o"></i> Input with
-                                    warning</label>
-                                                <input type="text" className="form-control" id="inputWarning" placeholder="Enter ..." />
-                                                <span className="help-block">Help block with warning</span>
-                                            </div>
-                                            <div className="form-group has-error">
-                                                <label className="control-label" htmlFor="inputError"><i className="fa fa-times-circle-o"></i> Input with
-                                    error</label>
-                                                <input type="text" className="form-control" id="inputError" placeholder="Enter ..." />
-                                                <span className="help-block">Help block with error</span>
-                                            </div>
-
-
-                                            <div className="form-group">
-                                                <div className="checkbox">
-                                                    <label>
-                                                        <input type="checkbox" />
-                                                        Checkbox 1
-                                    </label>
+                                        <form class="form-horizontal">
+                                            <div class="box-body">
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" class="col-sm-2 control-label">ประเภทการตรวจ</label>
+                                                    <div class="col-sm-10">
+                                                        <select class="form-control select2">
+                                                                <option>กรุณาเลือก</option>
+                                                                <option>ควันดำ</option>
+                                                                <option>เสียงดัง</option>
+                                                                <option>ไฮโดรคาร์บอน</option>
+                                                                <option>คาร์บอนไดออกไซด์</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-2 control-label">ค่าที่วัดได้</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-2 control-label">ผลการตรวจสอบ</label>
+                                                    <div class="col-sm-10">
+                                                        <select class="form-control select2">
+                                                            <option>กรุณาเลือก</option>
+                                                            <option>ห้ามใช้ยานพาหนะชั่วคราว</option>
+                                                            <option>ห้ามใช้ยานพาหนะเด็ดขาด</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
 
-                                                <div className="checkbox">
-                                                    <label>
-                                                        <input type="checkbox" />
-                                                        Checkbox 2
-                                    </label>
-                                                </div>
-
-                                                <div className="checkbox">
-                                                    <label>
-                                                        <input type="checkbox"  />
-                                                        Checkbox disabled
-                                    </label>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-2 control-label">วันที่ห้ามใช้ยานพาหนะ</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="date" class="form-control" />
+                                                    </div>
                                                 </div>
                                             </div>
-
-
-                                            <div className="form-group">
-                                                <div className="radio">
-                                                    <label>
-                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"  />
-                                                        Option one is this and that&mdash;be sure to include why it's great
-                                    </label>
-                                                </div>
-                                                <div className="radio">
-                                                    <label>
-                                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" />
-                                                        Option two can be something else and selecting it will deselect option one
-                                    </label>
-                                                </div>
-                                                <div className="radio">
-                                                    <label>
-                                                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"  />
-                                                        Option three is disabled
-                                    </label>
-                                                </div>
-                                            </div>
-
-
-                                            <div className="form-group">
-                                                <label>Select</label>
-                                                <select className="form-control">
-                                                    <option>option 1</option>
-                                                    <option>option 2</option>
-                                                    <option>option 3</option>
-                                                    <option>option 4</option>
-                                                    <option>option 5</option>
-                                                </select>
-                                            </div>
-                                            <div className="form-group">
-                                                <label>Select Disabled</label>
-                                                <select className="form-control" >
-                                                    <option>option 1</option>
-                                                    <option>option 2</option>
-                                                    <option>option 3</option>
-                                                    <option>option 4</option>
-                                                    <option>option 5</option>
-                                                </select>
-                                            </div>
-
-
-                                            <div className="form-group">
-                                                <label>Select Multiple</label>
-                                                <select multiple className="form-control">
-                                                    <option>option 1</option>
-                                                    <option>option 2</option>
-                                                    <option>option 3</option>
-                                                    <option>option 4</option>
-                                                    <option>option 5</option>
-                                                </select>
-                                            </div>
-                                            <div className="form-group">
-                                                <label>Select Multiple Disabled</label>
-                                                <select multiple className="form-control" >
-                                                    <option>option 1</option>
-                                                    <option>option 2</option>
-                                                    <option>option 3</option>
-                                                    <option>option 4</option>
-                                                    <option>option 5</option>
-                                                </select>
-                                            </div>
-
                                         </form>
                                     </div>
-
-                                </div>
-
                             </div>
-
                         </div>
-
                     </section>
+
+
+                    <section class="content">
+                        <div class="box box-default">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">ข้อมูลยานพาหนะ</h3>
+                                <div class="box-tools pull-right">
+                                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>ประเภทยานพาหนะ</label>
+                                            <select class="form-control select2">
+                                                <option>กรุณาเลือก</option>
+                                                <option>รถยนต์</option>
+                                                <option>รถยนต์สามล้อใช้งาน</option>
+                                                <option>รถจักรยานยนต์</option>
+                                                <option>เรือ</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>ทะเบียนรถ</label>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>ทะเบียนรถจังหวัด</label>
+                                            <input type="date" class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>ยี่ห้อยานพาหนะ</label>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>สี</label>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>ยี่ห้อเครื่องยนต์</label>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                                <label>ประเภทเครื่องยนต์</label>
+                                                <select class="form-control select2">
+                                                    <option>กรุณาเลือก</option>
+                                                    <option>น้ำมันดีเซล</option>
+                                                    <option>น้ำมันเบนซิน</option>
+                                                    <option>ไฟฟ้า</option>
+                                                    <option>ฮบริด</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>ประเภทเชื้อเพลิง</label>
+                                                <select class="form-control select2">
+                                                    <option>กรุณาเลือก</option>
+                                                    <option>น้ำมันดีเซล</option>
+                                                    <option>น้ำมันเบนซิน</option>
+                                                    <option>ก๊าซธรรมชาติ</option>
+                                                    <option>ไฟฟ้า</option>
+                                                    <option>ไฮบริด</option>
+                                                </select>
+                                            </div>
+                                        
+                                        <div class="form-group">
+                                            <label>ผู้ขับ</label>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>ที่อยู่</label>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>เบอร์ติดต่อ</label>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    
+
 
                 </div>
                 <Footer />
