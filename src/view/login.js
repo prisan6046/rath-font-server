@@ -60,7 +60,7 @@ class Home extends Component {
         formData.append('user', this.state.user);
         formData.append('pass', this.state.password);
 
-        axios.post('http://localhost:3001/api/token/authLogin', formData, {
+        axios.post('http://35.229.124.154/api/token/authLogin', formData, {
             onUploadProgress: ProgressEvent => {
 
             },
