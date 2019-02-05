@@ -1,16 +1,33 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class Home extends Component {
 
     constructor(props) {
         super(props);
+        this.handleSubmit = this.handleSubmit.bind(this);
         this.state = { 
-            email : '',
+            user : '',
             password : '',
             client_id :'',
             client_secret : '',
         };
+
+        this.handleUserChange = this.handleUserChange.bind(this)
+        this.handlePasswordChange = this.handlePasswordChange.bind(this)
       }
+
+
+      handleUserChange(e) {
+        this.setState({
+            user : e.target.value
+        });
+    }
+    handlePasswordChange(e) {
+        this.setState({
+            password : e.target.value
+        });
+    }
     
     //   onSearch = (e) => {
     //     e.preventDefault();
@@ -37,22 +54,29 @@ class Home extends Component {
     //     this.setState({ hits: result.hits });
     //   }
 
-    // handleSubmit(event) {
-    //     event.preventDefault();
-        
-    //     var formData = new FormData();
-    //     formData.append('name', this.state.name);
-    //     formData.append('detail', this.state.detail);
+    handleSubmit(event) {
+        event.preventDefault();
+        var formData = new FormData();
+        formData.append('user', this.state.user);
+        formData.append('pass', this.state.password);
 
-    //     axios.post('http://localhost:3001/', formData, {
-    //         onUploadProgress: ProgressEvent => {
+        axios.post('http://localhost:3001/api/token/authLogin', formData, {
+            onUploadProgress: ProgressEvent => {
 
-    //         },
-    //     }).then(res => {
-    //         localStorage.setItem(key , JSON.stringify(res));
-    //     })
+            },
+        }).then(res => {
+            if(res.data.status == 200){
+                localStorage.setItem('token' , res.data.token);
+                this.props.history.push("/home");
+            }else{
+                alert("เข้าสู่ระบบไม่สำเร็จ " + res.data.status)
+                this.setState({ user : ''})
+                this.setState({ password : ''})
+            }
+            
+        })
 
-    // }
+    }
 
 
     render() {
@@ -66,25 +90,26 @@ class Home extends Component {
                    
                     <div className="login-box-body">
                         <br />
-                            <center><img class="company_logo" src="company_logo.png" alt="images" /></center>
+                            <center><img className="company_logo" src="company_logo.png" alt="images" /></center>
                             <br />
                             <br />
-                    
-                            <div className="form-group has-feedback">
-                                <input type="email" className="form-control" placeholder="Email" />
-                                <span className="glyphicon glyphicon-envelope form-control-feedback"></span>
-                            </div>
-                            <div className="form-group has-feedback">
-                                <input type="password" className="form-control"   placeholder="Password" />
-                                <span className="glyphicon glyphicon-lock form-control-feedback"></span>
-                            </div>
-                            <div className="row">
-                                <div className="col-xs-4"></div>
-                                <div className="col-xs-4">
-                                   <center><a href="/home"><button type="submit" className="btn btn-primary btn-block btn-flat ">Sign In</button></a></center> 
+                            <form onSubmit={this.handleSubmit} >
+                                <div className="form-group has-feedback">
+                                    <input type="text" className="form-control" value={this.state.user } onChange={this.handleUserChange}  placeholder="Email" />
+                                    <span className="glyphicon glyphicon-envelope form-control-feedback"></span>
                                 </div>
-                                <div className="col-xs-4"></div>
-                            </div>
+                                <div className="form-group has-feedback">
+                                    <input type="password" className="form-control" value={this.state.password} onChange={this.handlePasswordChange}    placeholder="Password" />
+                                    <span className="glyphicon glyphicon-lock form-control-feedback"></span>
+                                </div>
+                                <div className="row">
+                                    <div className="col-xs-4"></div>
+                                    <div className="col-xs-4">
+                                    <center><button type="submit" className="btn btn-primary btn-block btn-flat ">Sign In</button></center> 
+                                    </div>
+                                    <div className="col-xs-4"></div>
+                                </div>
+                            </form>
 
                         </div>
                     </div>
